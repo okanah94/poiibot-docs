@@ -220,7 +220,7 @@
         <div class="cmd-grid">
           <div class="cmd-card" data-s="fight challenge turn based attack defend item combat hp"><div class="cmd-name">/fight</div><div class="cmd-desc">Challenge another user to a turn-based fight. They get 60 seconds to Accept or Decline. Each turn: choose ⚔️ Attack, 🛡️ Defend, or 🩹 Band-aid. 15 seconds per turn — auto-attack fires on timeout. Both players must have HP above 0.</div><div class="cmd-opts"><span class="opt-pill req">user*</span></div></div>
           <div class="cmd-card" data-s="fight stats wins losses record winrate rank tier damage"><div class="cmd-name">/fight-stats</div><div class="cmd-desc">View your fight record with global rank, win rate bar, total damage, biggest win, loss streak, and tier (🔰 Unranked → 👑 Legend). Optionally check another user.</div><div class="cmd-opts"><span class="opt-pill">user</span></div></div>
-          <div class="cmd-card" data-s="revive fight hp dead health restore 0"><div class="cmd-name">/revive</div><div class="cmd-desc">Revive yourself after being killed in a fight. Free if above 50 HP. Restores to max HP.</div></div>
+          <div class="cmd-card" data-s="revive fight hp dead health restore coins bandages"><div class="cmd-name">/revive</div><div class="cmd-desc">Revive yourself after being killed in a fight. Costs 🌸 500 Hana Coins OR consumes all your bandages — whichever you have. Revives to 50% HP. Use /loot-search to find bandages and heal to full.</div></div>
         </div>
       </div>
 
@@ -284,8 +284,6 @@
           <div class="cmd-card" data-s="ping latency response time ms bot"><div class="cmd-name">/ping</div><div class="cmd-desc">Check the bot's current response latency.</div></div>
           <div class="cmd-card" data-s="invite bot add server link oauth"><div class="cmd-name">/invite</div><div class="cmd-desc">Get the invite link to add PoiiBot to your server.</div></div>
           <div class="cmd-card" data-s="urban dictionary define word slang nsfw"><div class="cmd-name">/urban</div><div class="cmd-desc">Look up a term on Urban Dictionary. NSFW-channel only. Shows definition, example, and vote rating.</div><div class="cmd-opts"><span class="opt-pill req">term*</span></div></div>
-          <div class="cmd-card" data-s="megaphone shout broadcast message item loot"><div class="cmd-name">/megaphone</div><div class="cmd-desc">Shout a message to the global megaphone channel. Requires a Megaphone item from /loot-search. Mythical Unicorn Horn gives unlimited uses.</div><div class="cmd-opts"><span class="opt-pill req">shout*</span></div></div>
-          <div class="cmd-card" data-s="snipe deleted message last channel view"><div class="cmd-name">/sniped-message</div><div class="cmd-desc">View the last deleted message in the current channel.</div></div>
           <div class="cmd-card" data-s="thread create channel name post"><div class="cmd-name">/thread</div><div class="cmd-desc">Create a thread in the current channel.</div><div class="cmd-opts"><span class="opt-pill req">name*</span></div></div>
         </div>
       </div>
