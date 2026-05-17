@@ -102,6 +102,89 @@
   footer { border-top: 1px solid var(--border); padding: 2rem; text-align: center; font-size: 13px; color: var(--text-faint); }
   footer a { color: var(--pink); text-decoration: none; }
   @media (max-width: 768px) { .with-sidebar { grid-template-columns: 1fr; } .sidebar { display: none; } .hero-stats { gap: 1.5rem; } .nav-links { display: none; } .container { padding: 0 1rem; } .vt-grid { grid-template-columns: 1fr; } .vt-card.vt-featured { grid-column: span 1; } .vt-spotlight { margin: 0 -1rem 3rem; padding: 3rem 1rem; } }
+
+  /* Stream Alerts hero */
+  .sa-hero {
+    position: relative;
+    margin: 0 -2rem 4rem;
+    padding: 4rem 2rem;
+    background: #0a0f14;
+    background-image:
+      radial-gradient(ellipse at 20% 60%, rgba(145,70,255,0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 30%, rgba(255,80,80,0.08) 0%, transparent 45%),
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0);
+    background-size: auto, auto, 32px 32px;
+    border-top: 1px solid rgba(255,80,80,0.15);
+    border-bottom: 1px solid rgba(255,80,80,0.15);
+  }
+  .sa-inner { max-width: 1100px; margin: 0 auto; }
+  .sa-label {
+    display: inline-block;
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #f87171;
+    border: 1px solid rgba(248,113,113,0.35);
+    background: rgba(248,113,113,0.08);
+    padding: 4px 12px; border-radius: 4px;
+    margin-bottom: 1.25rem;
+  }
+  .sa-headline {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800; color: #fff;
+    line-height: 1.15; margin-bottom: 0.9rem;
+    max-width: 640px;
+  }
+  .sa-headline span { color: #fca5a5; }
+  .sa-sub {
+    font-size: 16px; color: #999;
+    max-width: 560px; line-height: 1.65;
+    margin-bottom: 2.5rem;
+  }
+  .sa-sub strong { color: #ccc; font-weight: 600; }
+  .sa-free-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(34,197,94,0.1);
+    border: 1px solid rgba(34,197,94,0.3);
+    border-radius: 6px; padding: 8px 16px;
+    font-size: 13px; font-weight: 600; color: #86efac;
+    margin-bottom: 2.5rem;
+  }
+  .sa-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px; margin-bottom: 2.5rem;
+  }
+  .sa-feat {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px; padding: 1.25rem;
+    transition: border-color 0.2s;
+  }
+  .sa-feat:hover { border-color: rgba(248,113,113,0.25); }
+  .sa-feat-icon { font-size: 20px; margin-bottom: 0.6rem; display: block; }
+  .sa-feat h3 { font-size: 14px; font-weight: 700; color: #eee; margin-bottom: 0.35rem; }
+  .sa-feat p { font-size: 13px; color: #666; line-height: 1.55; }
+  .sa-feat p strong { color: #aaa; }
+  .sa-cmds {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.07);
+  }
+  .sa-cmd {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 9px 12px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+  }
+  .sa-cmd code { font-family: var(--mono); font-size: 12px; color: #fca5a5; white-space: nowrap; flex-shrink: 0; }
+  .sa-cmd span { font-size: 12px; color: #555; line-height: 1.5; }
+  @media (max-width: 768px) {
+    .sa-features { grid-template-columns: 1fr; }
+    .sa-hero { margin: 0 -1rem 3rem; padding: 3rem 1rem; }
+  }
 </style>
 </head>
 <body>
@@ -109,6 +192,7 @@
   <a class="nav-logo" href="#">🌸 <span>PoiiBot</span></a>
   <div class="nav-links">
     <a href="#vtuber-registry" style="color:#a78bfa;font-weight:600;">🎴 VTuber Registry</a>
+    <a href="#stream-alerts-hero" style="color:#f87171;font-weight:600;">📡 Stream Alerts</a>
     <a href="#economy">Economy</a>
     <a href="#profile">Profile</a>
     <a href="#levels">Levels</a>
@@ -202,7 +286,8 @@
   <div class="with-sidebar">
     <aside class="sidebar">
       <h4>Featured</h4>
-      <ul><li><a href="#vtuber-registry" style="color:#a78bfa;font-weight:600;">🎴 VTuber Registry</a></li></ul>
+      <ul><li><a href="#vtuber-registry" style="color:#a78bfa;font-weight:600;">🎴 VTuber Registry</a>
+    <a href="#stream-alerts-hero" style="color:#f87171;font-weight:600;">📡 Stream Alerts</a></li></ul>
       <h4>Overview</h4>
       <ul><li><a href="#overview">Getting Started</a></li><li><a href="#setup">Server Setup</a></li></ul>
       <h4>Economy</h4>
