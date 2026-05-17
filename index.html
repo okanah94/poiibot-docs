@@ -93,13 +93,17 @@
     <a href="#alerts">Alerts</a>
     <a href="#utility">Utility</a>
   </div>
-  <a class="nav-invite" href="https://discord.com/oauth2/authorize?client_id=601208904348729365&permissions=8&scope=bot%20applications.commands" target="_blank">Add to Server</a>
+  <a href="https://discord.com/oauth2/authorize?client_id=601208904348729365&permissions=8&scope=bot%20applications.commands" target="_blank" style="background:var(--pink-dark);color:white;text-decoration:none;padding:7px 18px;border-radius:20px;font-size:13px;font-weight:600;flex-shrink:0;transition:background 0.2s;">Add to Server</a>
 </nav>
 
 <div class="hero">
   <div class="hero-badge">Documentation</div>
   <h1>PoiiBot</h1>
   <p>A feature-rich Discord bot built for VTuber communities. Economy, profiles, moderation, stream alerts, and much more.</p>
+  <div style="display:flex;justify-content:center;gap:12px;margin-top:1.5rem;">
+    <a href="https://discord.com/oauth2/authorize?client_id=601208904348729365&permissions=8&scope=bot%20applications.commands" target="_blank" style="background:var(--pink-dark);color:white;text-decoration:none;padding:10px 24px;border-radius:24px;font-size:15px;font-weight:700;">🌸 Add to Server</a>
+    <a href="#overview" style="background:rgba(255,182,193,0.1);border:1px solid var(--border-strong);color:var(--pink);text-decoration:none;padding:10px 24px;border-radius:24px;font-size:15px;font-weight:600;">Browse Commands</a>
+  </div>
   <div class="hero-stats">
     <div class="hero-stat"><span class="num">80+</span><span class="lbl">Commands</span></div>
     <div class="hero-stat"><span class="num">🌸</span><span class="lbl">Hana Coins</span></div>
@@ -157,7 +161,20 @@
 
       <div class="section-anchor" id="economy">
         <div class="section-header"><div class="section-icon">🌸</div><div><h2>Economy — Hana Coins</h2><p>Earn, spend, and manage your coins</p></div></div>
-        <div class="callout"><strong>Ways to earn:</strong> Chat passively (1–3/msg, 60s cooldown) · /daily check-in · /work every 4 hours · Guild level-ups (25 × level) · Fight wins · Rare loot finds</div>
+        <div class="callout">
+          <strong>Ways to earn Hana Coins:</strong><br>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;margin-top:8px;font-size:13px;">
+            <span>💬 Chatting (passive)</span><span style="color:var(--text)">🌸 1–3 per message <em>(60s cooldown)</em></span>
+            <span>📅 /daily check-in</span><span style="color:var(--text)">🌸 50–150 base + streak bonuses</span>
+            <span>💼 /work</span><span style="color:var(--text)">🌸 100–300 every 4 hours</span>
+            <span>🏠 Guild level-up</span><span style="color:var(--text)">🌸 25 × new level</span>
+            <span>⚔️ Fight win</span><span style="color:var(--text)">🌸 10–30 <em>(double on 3+ loss streak)</em></span>
+            <span>📦 Rare loot find</span><span style="color:var(--text)">🌸 10 / 25 / 50 <em>(rare/ultra/mythic)</em></span>
+          </div>
+          <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);font-size:13px;">
+            <strong>Daily streak bonuses:</strong> 7 days +🌸100 · 30 days +🌸300 · 100 days +🌸1,000
+          </div>
+        </div>
         <div class="cmd-grid">
           <div class="cmd-card" data-s="balance coins wallet check rank"><div class="cmd-name">/balance</div><div class="cmd-desc">Check your Hana Coin balance and your global rank on the rich list. Optionally check another user.</div><div class="cmd-opts"><span class="opt-pill">user</span></div></div>
           <div class="cmd-card" data-s="daily claim coins streak bonus reward"><div class="cmd-name">/daily</div><div class="cmd-desc">Claim your daily Hana Coins. Base reward is 50–150 coins based on streak. Bonus payouts at 7-day (+100), 30-day (+300), and 100-day (+1,000) streaks. Resets at midnight UTC.</div></div>
@@ -170,10 +187,10 @@
       <div class="section-anchor" id="shop">
         <div class="section-header"><div class="section-icon">🛍️</div><div><h2>Shop</h2><p>Spend Hana Coins on cosmetics and boosts</p></div></div>
         <div class="info-grid">
-          <div class="info-card"><div class="ic">🎖️</div><h3>Badges — 🌸 2,500</h3><p>Profile card badges. Special: 💰 Moneymaster is 🌸 100,000 and exclusively earnable.</p></div>
-          <div class="info-card"><div class="ic">🖼️</div><h3>Wallpapers — 🌸 5,000</h3><p>Custom profile card backgrounds. Preview before buying.</p></div>
-          <div class="info-card"><div class="ic">✨</div><h3>Borders — 🌸 3,000–5,000</h3><p>Glow borders that bloom outward from your card. Six colors available.</p></div>
-          <div class="info-card"><div class="ic">⚡</div><h3>Boosts</h3><p>24hr Exp Boost (🌸 8,000) or permanent Loot Boost (🌸 15,000).</p></div>
+          <div class="info-card"><div class="ic">🎖️</div><h3>Badges — 🌸 2,500</h3><p>Profile card badges. Special: 💰 Moneymaster costs 🌸 100,000 — the ultimate flex.</p></div>
+          <div class="info-card"><div class="ic">🖼️</div><h3>Wallpapers — 🌸 5,000</h3><p>Custom profile card backgrounds. Preview on your actual card before buying.</p></div>
+          <div class="info-card"><div class="ic">✨</div><h3>Borders — 🌸 3,000–5,000</h3><p>Glow borders that bloom outward from your card edges. Six colors: Sakura, Amethyst, Frost, Jade, Ember, Gold.</p></div>
+          <div class="info-card"><div class="ic">⚡</div><h3>Boosts</h3><p>24hr Exp Boost 🌸 8,000 · Permanent Loot Boost 🌸 15,000 (skips to uncommon tier).</p></div>
         </div>
         <div class="cmd-grid">
           <div class="cmd-card" data-s="shop buy purchase badges wallpapers borders boosts preview"><div class="cmd-name">/shop</div><div class="cmd-desc">Browse the Hana Shop by category. Select an item to get a Preview button (renders your actual card with the item applied) and a Purchase button. Navigate categories and pages with buttons.</div><div class="cmd-opts"><span class="opt-pill">category</span></div></div>
@@ -290,7 +307,6 @@
       <div class="section-anchor" id="fun">
         <div class="section-header"><div class="section-icon">🎉</div><div><h2>Fun</h2><p>Entertainment commands</p></div></div>
         <div class="cmd-grid">
-          <div class="cmd-card" data-s="birb bird random image picture"><div class="cmd-name">/birb</div><div class="cmd-desc">Get a random bird image.</div></div>
           <div class="cmd-card" data-s="f pay respects meme"><div class="cmd-name">/f</div><div class="cmd-desc">Pay your respects.</div></div>
           <div class="cmd-card" data-s="pretend ban fake prank user reason"><div class="cmd-name">/pretend-ban</div><div class="cmd-desc">Fake ban a user with a dramatic red embed and a custom reason.</div><div class="cmd-opts"><span class="opt-pill req">user*</span><span class="opt-pill req">reason*</span></div></div>
           <div class="cmd-card" data-s="owo transform text uwu context menu message"><div class="cmd-name">owo this message</div><div class="cmd-desc">Context menu — right click any message and OwO-ify it.</div></div>
