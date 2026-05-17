@@ -72,12 +72,12 @@
   .callout { background: rgba(255,182,193,0.06); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: 13.5px; color: var(--text-muted); }
   .callout strong { color: var(--pink); }
 
-  .vt-spotlight { position: relative; margin: 0 -2rem 4rem; padding: 4rem 2rem; background: #0f0c1a; border-top: 1px solid rgba(180,140,255,0.2); border-bottom: 1px solid rgba(180,140,255,0.2); }
+  .vt-spotlight { position: relative; margin: 0 -2rem 4rem; padding: 4rem 2rem; background: #100d1c; background-image: radial-gradient(ellipse at 70% 40%, rgba(139,92,246,0.12) 0%, transparent 55%), radial-gradient(circle at 1px 1px, rgba(167,139,250,0.07) 1px, transparent 0); background-size: auto, 28px 28px; border-top: 1px solid rgba(139,92,246,0.2); border-bottom: 1px solid rgba(139,92,246,0.2); }
   .vt-inner { max-width: 1100px; margin: 0 auto; }
   .vt-label { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #a78bfa; border: 1px solid rgba(167,139,250,0.35); background: rgba(167,139,250,0.08); padding: 4px 12px; border-radius: 4px; margin-bottom: 1.25rem; }
   .vt-headline { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 0.9rem; max-width: 640px; }
   .vt-headline span { color: #c4b5fd; }
-  .vt-sub { font-size: 16px; color: #888; max-width: 540px; line-height: 1.65; margin-bottom: 2.5rem; }
+  .vt-sub { font-size: 16px; color: #999; max-width: 540px; line-height: 1.65; margin-bottom: 2.5rem; }
   .vt-sub strong { color: #ccc; font-weight: 600; }
   .vt-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 3rem; }
   .vt-pill { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 6px 14px; font-size: 13px; color: #ccc; }
@@ -87,16 +87,16 @@
   .vt-card.vt-featured { grid-column: span 2; border-color: rgba(167,139,250,0.2); }
   .vt-card-icon { font-size: 22px; margin-bottom: 0.75rem; display: block; }
   .vt-card h3 { font-size: 15px; font-weight: 700; color: #eee; margin-bottom: 0.45rem; }
-  .vt-card p { font-size: 13px; color: #666; line-height: 1.6; }
+  .vt-card p { font-size: 13px; color: #888; line-height: 1.6; }
   .vt-card p strong { color: #aaa; font-weight: 600; }
   .vt-cmds { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.07); margin-bottom: 2rem; }
   .vt-cmd { display: flex; align-items: flex-start; gap: 10px; padding: 9px 12px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; }
   .vt-cmd code { font-family: var(--mono); font-size: 12px; color: #a78bfa; white-space: nowrap; flex-shrink: 0; }
-  .vt-cmd span { font-size: 12px; color: #555; line-height: 1.5; }
+  .vt-cmd span { font-size: 12px; color: #777; line-height: 1.5; }
   .vt-verify { display: flex; align-items: flex-start; gap: 14px; background: rgba(34,197,94,0.05); border: 1px solid rgba(34,197,94,0.18); border-radius: 10px; padding: 1.1rem 1.4rem; }
   .vt-verify-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
   .vt-verify h4 { font-size: 14px; font-weight: 700; color: #86efac; margin-bottom: 3px; }
-  .vt-verify p { font-size: 13px; color: #555; line-height: 1.5; }
+  .vt-verify p { font-size: 13px; color: #888; line-height: 1.5; }
   .vt-verify p a { color: #86efac; text-decoration: none; }
   .vt-verify p a:hover { text-decoration: underline; }
   footer { border-top: 1px solid var(--border); padding: 2rem; text-align: center; font-size: 13px; color: var(--text-faint); }
@@ -157,12 +157,12 @@
       <div class="vt-card vt-featured">
         <span class="vt-card-icon">🌍</span>
         <h3>One registry, every server</h3>
-        <p>Cards are <strong>global</strong>, not locked to a single server. Submit a VTuber once and they become searchable from anywhere PoiiBot is installed. Search by name, filter by content type, or discover someone random.<br><br>Each card shows name, oshi marks, agency, debut date, content tags, languages, links, bio, and a background image from the VTuber themselves.</p>
+        <p>Cards are <strong>global</strong>, not locked to a single server. Submit a VTuber once and they become searchable from anywhere PoiiBot is installed. Search by name, filter by content type, or discover someone random.<br><br>Each card shows name, oshi marks, agency, debut date, content tags, languages, links, bio, a supporter count, a collection count, and a background image from the VTuber themselves. Submitters can set oshi marks directly in the submission form.</p>
       </div>
       <div class="vt-card">
         <span class="vt-card-icon">🎴</span>
-        <h3>Collect your favorites</h3>
-        <p>Spend <strong>100 Hana Coins</strong> to add any approved VTuber to your personal collection. Each card tracks how many users have collected it.</p>
+        <h3>Collect, oshi, support</h3>
+        <p>Spend <strong>100 Hana Coins</strong> to collect a VTuber card (once per day). Set your <strong>oshi</strong> with 50 coins and they show up on your profile card with their oshi marks. Support a VTuber permanently for 50 coins — both counts display on their card.</p>
       </div>
       <div class="vt-card">
         <span class="vt-card-icon">📋</span>
@@ -211,6 +211,8 @@
       <ul><li><a href="#profile">Profile Card</a></li><li><a href="#levels">Levels and Prestige</a></li><li><a href="#fight">Fight System</a></li><li><a href="#social">Social and Marriage</a></li></ul>
       <h4>Server Tools</h4>
       <ul><li><a href="#alerts">Stream Alerts</a></li><li><a href="#moderation">Moderation</a></li><li><a href="#utility">Utility</a></li><li><a href="#fun">Fun</a></li></ul>
+      <h4>VTuber Registry</h4>
+      <ul><li><a href="#vtuber-commands" style="color:#a78bfa;">🎴 Commands</a></li></ul>
     </aside>
     <main id="main-content">
       <div id="no-results">No commands found matching your search.</div>
@@ -292,9 +294,9 @@
 
       <div class="section-anchor" id="profile">
         <div class="section-header"><div class="section-icon">🖼️</div><div><h2>Profile Card</h2><p>Your personal canvas card</p></div></div>
-        <div class="callout">Your card shows username, title, prestige tag, global level, server level, HP bar, Hana Coins, marriage status with partner avatar, bio text, and your badge collection. Equip a border via <strong>/shop</strong>.</div>
+        <div class="callout">Your card shows username, title, prestige tag, global level, server level, HP bar, Hana Coins, marriage status with partner avatar, your oshi (set via /vtuber oshi), bio text, and your badge collection. Equip a border via <strong>/shop</strong>.</div>
         <div class="cmd-grid">
-          <div class="cmd-card" data-s="profile card view show user stats badges"><div class="cmd-name">/profile</div><div class="cmd-desc">View your profile card or another user's. Shows all stats, badges, bio, HP bar, and equipped border.</div><div class="cmd-opts"><span class="opt-pill">user</span></div></div>
+          <div class="cmd-card" data-s="profile card view show user stats badges"><div class="cmd-name">/profile</div><div class="cmd-desc">View your profile card or another user's. Shows all stats, badges, bio, HP bar, marriage status, your oshi, and equipped border.</div><div class="cmd-opts"><span class="opt-pill">user</span></div></div>
           <div class="cmd-card" data-s="profile set bio text modal customize"><div class="cmd-name">/profile-set bio</div><div class="cmd-desc">Open a modal to write your profile bio (up to 200 characters). Shows in the bio box on your card.</div></div>
           <div class="cmd-card" data-s="profile set title flair text under username"><div class="cmd-name">/profile-set title</div><div class="cmd-desc">Set a title or flair that shows under your username on your profile card (max 35 characters).</div><div class="cmd-opts"><span class="opt-pill req">title*</span></div></div>
           <div class="cmd-card" data-s="profile set badge primary select owned top right"><div class="cmd-name">/profile-set badge</div><div class="cmd-desc">Choose which of your owned badges shows as your primary badge in the top-right of your card.</div></div>
@@ -392,6 +394,22 @@
           <div class="cmd-card" data-s="f pay respects meme"><div class="cmd-name">/f</div><div class="cmd-desc">Pay your respects.</div></div>
           <div class="cmd-card" data-s="pretend ban fake prank user reason"><div class="cmd-name">/pretend-ban</div><div class="cmd-desc">Fake ban a user with a dramatic red embed and a custom reason.</div><div class="cmd-opts"><span class="opt-pill req">user*</span><span class="opt-pill req">reason*</span></div></div>
           <div class="cmd-card" data-s="owo transform text uwu context menu message"><div class="cmd-name">owo this message</div><div class="cmd-desc">Context menu command. Right click any message and OwO-ify it.</div></div>
+        </div>
+      </div>
+
+      <div class="section-anchor" id="vtuber-commands">
+        <div class="section-header"><div class="section-icon">🎴</div><div><h2>VTuber Registry</h2><p>Global VTuber discovery, collections, and oshi system</p></div></div>
+        <div class="callout">Cards are global across every server PoiiBot is in. Oshi marks are set during submission. Cards show collection count and supporter count. Your oshi appears on your profile card.</div>
+        <div class="cmd-grid">
+          <div class="cmd-card" data-s="vtuber view card name registry"><div class="cmd-name">/vtuber view</div><div class="cmd-desc">View a VTuber's rendered card by name. Works from any server.</div><div class="cmd-opts"><span class="opt-pill req">name*</span></div></div>
+          <div class="cmd-card" data-s="vtuber search tag content type gaming singing asmr"><div class="cmd-name">/vtuber search</div><div class="cmd-desc">Browse approved VTubers by content type. Results sort by collection count so the most popular surface first.</div><div class="cmd-opts"><span class="opt-pill">tag</span></div></div>
+          <div class="cmd-card" data-s="vtuber random discover new"><div class="cmd-name">/vtuber random</div><div class="cmd-desc">Pull up a random approved VTuber from the registry. Good way to discover someone new.</div></div>
+          <div class="cmd-card" data-s="vtuber submit submission form image bio agency tags"><div class="cmd-name">/vtuber submit</div><div class="cmd-desc">Submit a VTuber to the registry via a two-part form. Part 1 covers image URL, bio, agency, content tags, and oshi marks. Part 2 covers languages, Twitch, YouTube, Twitter, and debut date. Submissions are reviewed before going live.</div><div class="cmd-opts"><span class="opt-pill req">name*</span></div></div>
+          <div class="cmd-card" data-s="vtuber collect collection hana coins 100"><div class="cmd-name">/vtuber collect</div><div class="cmd-desc">Add a VTuber to your personal collection for 100 Hana Coins. Once per day per VTuber. Increments their collection count on their card.</div><div class="cmd-opts"><span class="opt-pill req">name*</span></div></div>
+          <div class="cmd-card" data-s="vtuber collection browse paginated cards"><div class="cmd-name">/vtuber collection</div><div class="cmd-desc">Browse your collected VTuber cards in a paginated list. Use /vtuber view to see any card in full.</div></div>
+          <div class="cmd-card" data-s="vtuber oshi set profile card marks"><div class="cmd-name">/vtuber oshi</div><div class="cmd-desc">Set a VTuber from the registry as your oshi. Their name and oshi marks show on your profile card. Leave the name blank to clear your current oshi.</div><div class="cmd-opts"><span class="opt-pill">name</span></div></div>
+          <div class="cmd-card" data-s="vtuber support 50 coins permanent supporter count"><div class="cmd-name">/vtuber support</div><div class="cmd-desc">Support a VTuber for 50 Hana Coins. One-time and permanent per VTuber. Their supporter count on their card goes up and never comes down.</div><div class="cmd-opts"><span class="opt-pill req">name*</span></div></div>
+          <div class="cmd-card" data-s="vtuber edit verified owner card update"><div class="cmd-name">/vtuber edit</div><div class="cmd-desc">Edit your own verified VTuber card. Only accessible after claiming via the verification process. Update image, bio, content tags, Twitch, and Twitter.</div><div class="cmd-opts"><span class="opt-pill req">name*</span></div></div>
         </div>
       </div>
 
